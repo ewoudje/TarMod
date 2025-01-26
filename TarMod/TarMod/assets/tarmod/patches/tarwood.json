@@ -1,0 +1,95 @@
+[
+  {
+    "file": "game:worldproperties/block/wood",
+    "op": "add",
+    "path": "/variants/-",
+    "value": {
+	  "code": "tarred",
+	  "treeType": "Decidious"
+    }
+  },
+  {
+    "file": "game:blocktypes/wax/wildbeehive-inlog",
+    "op": "addmerge",
+    "path": "/skipVariants",
+    "value": ["*-tarred"]
+  },
+  {
+    "file": "game:blocktypes/wood/woodtyped/log",
+    "op": "addmerge",
+    "path": "/skipVariants",
+    "value": ["*-tarred-*"]
+  },
+  {
+    "file": "game:blocktypes/wood/woodtyped/log-debarked",
+    "op": "addmerge",
+    "path": "/skipVariants",
+    "value": ["*-tarred-*"]
+  },
+  {
+    "file": "game:blocktypes/wood/woodtyped/log-quad",
+    "op": "addmerge",
+    "path": "/skipVariants",
+    "value": ["*-tarred-*"]
+  },
+  {
+    "file": "game:blocktypes/wood/woodtyped/log-quad-corner",
+    "op": "addmerge",
+    "path": "/skipVariants",
+    "value": ["*-tarred-*"]
+  },
+  {
+    "file": "game:blocktypes/plant/leaves/normal",
+    "op": "addmerge",
+    "path": "/skipVariants",
+    "value": ["*-tarred"]
+  },
+  {
+    "file": "game:blocktypes/plant/leaves/branchy",
+    "op": "addmerge",
+    "path": "/skipVariants",
+    "value": ["*-tarred"]
+  },
+  {
+    "file": "game:blocktypes/wood/woodtyped/roughhewnfence-free",
+    "op": "addmerge",
+    "path": "/skipVariants",
+    "value": ["*-tarred-*"]
+  },
+  {
+    "file": "game:blocktypes/wood/woodtyped/roughhewnfencegate",
+    "op": "addmerge",
+    "path": "/skipVariants",
+    "value": ["*-tarred-*"]
+  },
+  {
+    "file": "game:blocktypes/wood/woodtyped/roughhewnfencegate-fsnow",
+    "op": "addmerge",
+    "path": "/skipVariants",
+    "value": ["*-tarred-*"]
+  },
+  {
+    "file": "game:blocktypes/plant/plaintreesapling",
+    "op": "addmerge",
+    "path": "/skipVariants",
+    "value": ["*-tarred-*"]
+  },
+  {
+    "file": "game:itemtypes/tool/oar",
+    "op": "addmerge",
+    "path": "/skipVariants",
+    "value": ["*-tarred"]
+  },
+  {
+    "file": "game:itemtypes/utility/boat",
+    "op": "addmerge",
+    "path": "/skipVariants",
+    "value": ["*-tarred"]
+  },
+  {
+    "file": "game:recipes/grid/glasspane",
+    "op": "add",
+    "path": "/ingredients/W/allowedVariants/-",
+    "value": "tarred"
+  }
+]

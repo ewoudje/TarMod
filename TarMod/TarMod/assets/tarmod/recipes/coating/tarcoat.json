@@ -1,0 +1,6 @@
+{
+	"code": "tarcoat",
+	"liquidIngredient": { "type": "item", "code": "game:tarportion", "litres": 1 },
+	"affectBlockIngredient": { "type": "block", "code": "*", "name": "block" },
+	"output": { "type": "block", "code": "{block}-tarred" }
+}

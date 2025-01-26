@@ -1,0 +1,254 @@
+﻿[
+  {
+    "file": "game:blocktypes/roofing/beam-plane",
+    "op": "addmerge",
+    "path": "/variantgroups/0/states",
+    "value": ["tarred"]
+  },
+  {
+    "file": "game:blocktypes/roofing/beam-ridge",
+    "op": "addmerge",
+    "path": "/variantgroups/0/states",
+    "value": ["tarred"]
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofing",
+    "op": "addmerge",
+    "path": "/variantgroups/0/states",
+    "value": ["tarred"]
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingbottom",
+    "op": "addmerge",
+    "path": "/variantgroups/0/states",
+    "value": ["tarred"]
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingcorner-inner",
+    "op": "addmerge",
+    "path": "/variantgroups/0/states",
+    "value": ["tarred"]
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingcorner-outer",
+    "op": "addmerge",
+    "path": "/variantgroups/0/states",
+    "value": ["tarred"]
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofinghalfleft",
+    "op": "addmerge",
+    "path": "/variantgroups/0/states",
+    "value": ["tarred"]
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofinghalfright",
+    "op": "addmerge",
+    "path": "/variantgroups/0/states",
+    "value": ["tarred"]
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingridge",
+    "op": "addmerge",
+    "path": "/variantgroups/0/states",
+    "value": ["tarred"]
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingridgeend",
+    "op": "addmerge",
+    "path": "/variantgroups/0/states",
+    "value": ["tarred"]
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingridgehalfleft",
+    "op": "addmerge",
+    "path": "/variantgroups/0/states",
+    "value": ["tarred"]
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingridgehalfright",
+    "op": "addmerge",
+    "path": "/variantgroups/0/states",
+    "value": ["tarred"]
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingtip",
+    "op": "addmerge",
+    "path": "/variantgroups/0/states",
+    "value": ["tarred"]
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingtop",
+    "op": "addmerge",
+    "path": "/variantgroups/0/states",
+    "value": ["tarred"]
+  },
+  {
+    "file": "game:blocktypes/roofing/beam-plane",
+    "op": "addmerge",
+    "path": "/texturesByType",
+    "value": {
+      "*-tarred-*": {
+        "acacia1": { "base": "block/wood/planks/{material}1" },
+        "acacia-top": { "base": "block/wood/shingles/{material}-top" },
+        "acacia-side": { "base": "block/wood/shingles/{material}-side" }
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/roofing/beam-ridge",
+    "op": "addmerge",
+    "path": "/texturesByType",
+    "value": {
+      "*-tarred-*": {
+        "acacia1": { "base": "block/wood/planks/{material}1" },
+        "acacia-top": { "base": "block/wood/shingles/{material}-top" },
+        "acacia-side": { "base": "block/wood/shingles/{material}-side" }
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofing",
+    "op": "addmerge",
+    "path": "/texturesByType",
+    "value": {
+      "*-tarred-*": {
+        "acacia1": { "base": "block/wood/planks/{material}1" },
+        "acacia-top": { "base": "block/wood/shingles/{material}-top" },
+        "acacia-side": { "base": "block/wood/shingles/{material}-side" }
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingbottom",
+    "op": "addmerge",
+    "path": "/texturesByType",
+    "value": {
+      "*-tarred-*": {
+        "acacia1": { "base": "block/wood/planks/{material}1" },
+        "acacia-top": { "base": "block/wood/shingles/{material}-top" },
+        "acacia-side": { "base": "block/wood/shingles/{material}-side" }
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingcorner-inner",
+    "op": "addmerge",
+    "path": "/texturesByType",
+    "value": {
+      "*-tarred-*": {
+        "acacia1": { "base": "block/wood/planks/{material}1" },
+        "acacia-top": { "base": "block/wood/shingles/{material}-top" },
+        "acacia-side": { "base": "block/wood/shingles/{material}-side" }
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingcorner-outer",
+    "op": "addmerge",
+    "path": "/texturesByType",
+    "value": {
+      "*-tarred-*": {
+        "acacia1": { "base": "block/wood/planks/{material}1" },
+        "acacia-top": { "base": "block/wood/shingles/{material}-top" },
+        "acacia-side": { "base": "block/wood/shingles/{material}-side" }
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofinghalfleft",
+    "op": "addmerge",
+    "path": "/texturesByType",
+    "value": {
+      "*-tarred-*": {
+        "acacia1": { "base": "block/wood/planks/{material}1" },
+        "acacia-top": { "base": "block/wood/shingles/{material}-top" },
+        "acacia-side": { "base": "block/wood/shingles/{material}-side" }
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofinghalfright",
+    "op": "addmerge",
+    "path": "/texturesByType",
+    "value": {
+      "*-tarred-*": {
+        "acacia1": { "base": "block/wood/planks/{material}1" },
+        "acacia-top": { "base": "block/wood/shingles/{material}-top" },
+        "acacia-side": { "base": "block/wood/shingles/{material}-side" }
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingridge",
+    "op": "addmerge",
+    "path": "/texturesByType",
+    "value": {
+      "*-tarred-*": {
+        "acacia1": { "base": "block/wood/planks/{material}1" },
+        "acacia-top": { "base": "block/wood/shingles/{material}-top" },
+        "acacia-side": { "base": "block/wood/shingles/{material}-side" }
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingridgeend",
+    "op": "addmerge",
+    "path": "/texturesByType",
+    "value": {
+      "*-tarred-*": {
+        "acacia1": { "base": "block/wood/planks/{material}1" },
+        "acacia-top": { "base": "block/wood/shingles/{material}-top" },
+        "acacia-side": { "base": "block/wood/shingles/{material}-side" }
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingridgehalfleft",
+    "op": "addmerge",
+    "path": "/texturesByType",
+    "value": {
+      "*-tarred-*": {
+        "acacia1": { "base": "block/wood/planks/{material}1" },
+        "acacia-top": { "base": "block/wood/shingles/{material}-top" },
+        "acacia-side": { "base": "block/wood/shingles/{material}-side" }
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingridgehalfright",
+    "op": "addmerge",
+    "path": "/texturesByType",
+    "value": {
+      "*-tarred-*": {
+        "acacia1": { "base": "block/wood/planks/{material}1" },
+        "acacia-top": { "base": "block/wood/shingles/{material}-top" },
+        "acacia-side": { "base": "block/wood/shingles/{material}-side" }
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingtip",
+    "op": "addmerge",
+    "path": "/texturesByType",
+    "value": {
+      "*-tarred-*": {
+        "acacia1": { "base": "block/wood/planks/{material}1" },
+        "acacia-top": { "base": "block/wood/shingles/{material}-top" },
+        "acacia-side": { "base": "block/wood/shingles/{material}-side" }
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/roofing/slantedroofingtop",
+    "op": "addmerge",
+    "path": "/texturesByType",
+    "value": {
+      "*-tarred-*": {
+        "acacia1": { "base": "block/wood/planks/{material}1" },
+        "acacia-top": { "base": "block/wood/shingles/{material}-top" },
+        "acacia-side": { "base": "block/wood/shingles/{material}-side" }
+      }
+    }
+  }
+]

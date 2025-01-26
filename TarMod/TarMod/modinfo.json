@@ -1,0 +1,13 @@
+{
+    "type": "code",
+    "modid": "tarmod",
+    "name": "TarMod",
+    "authors": [
+        "ewoudje"
+    ],
+    "description": "Adds tar to your game!",
+    "version": "1.0.1",
+    "dependencies": {
+        "game": ""
+    }
+}

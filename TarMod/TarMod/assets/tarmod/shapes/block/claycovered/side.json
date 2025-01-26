@@ -1,0 +1,42 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"clay": "block/clay/blueclay",
+		"soil": "block/soil/fertmedium"
+	},
+	"elements": [
+		{
+			"name": "Soil",
+			"from": [ 0.0, 0.0, 0.0 ],
+			"to": [ 16.0, 16.0, 15.0 ],
+			"faces": {
+				"north": { "texture": "#soil", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+				"east": { "texture": "#soil", "uv": [ 0.0, 0.0, 15.0, 16.0 ], "autoUv": false },
+				"south": { "texture": "#soil", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+				"west": { "texture": "#soil", "uv": [ 0.0, 0.0, 15.0, 16.0 ] },
+				"up": { "texture": "#soil", "uv": [ 0.0, 0.0, 16.0, 15.0 ] },
+				"down": { "texture": "#soil", "uv": [ 0.0, 0.0, 16.0, 15.0 ], "windMode": [-1,-1,-1,-1] }
+			}
+		},
+		{
+			"name": "Clay",
+			"from": [ 0.0, 0.0, 15.0 ],
+			"to": [ 16.0, 16.0, 16.0 ],
+			"rotationOrigin": [ 0.0, 0.0, 15.0 ],
+			"faces": {
+				"north": { "texture": "#clay", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+				"east": { "texture": "#clay", "uv": [ 0.0, 0.0, 1.0, 16.0 ], "windMode": [-1,-1,-1,-1], "windData": [0,1,1,0] },
+				"south": { "texture": "#clay", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "windMode": [-1,-1,-1,-1], "windData": [0,0,1,1] },
+				"west": { "texture": "#clay", "uv": [ 0.0, 0.0, 1.0, 16.0 ], "windMode": [-1,-1,-1,-1], "windData": [0,0,1,1] },
+				"up": { "texture": "#clay", "uv": [ 0.0, 0.0, 16.0, 1.0 ], "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+				"down": { "texture": "#clay", "uv": [ 0.0, 0.0, 16.0, 1.0 ], "windMode": [-1,-1,-1,-1] }
+			}
+		}
+	]}

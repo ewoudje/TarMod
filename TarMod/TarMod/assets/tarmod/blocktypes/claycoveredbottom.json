@@ -1,0 +1,71 @@
+﻿{
+  "code": "claycoveredbottom",
+  "class": "BlockClayCover",
+  "attributes": {
+    "handbook": {
+      "exclude": true
+    },
+    "mapColorCode": "land",
+    "preventsDecay": true
+  },
+  "sideopaque": { "all": false },
+  "variantgroups": [
+    { "code": "n", "states": ["y", "n"] },
+    { "code": "e", "states": ["y", "n"] },
+    { "code": "s", "states": ["y", "n"] },
+    { "code": "w", "states": ["y", "n"] },
+    { "code": "clay_state", "states": ["raw", "burned"] },
+    { "code": "clay_type", "states": ["blue", "fire", "red"] },
+    { "loadFromProperties": "game:abstract/fertility" }
+  ],
+  "shapeByType": {
+    "claycoveredbottom-n-n-n-n-*": { "base": "block/claycovered/channel0" },
+    "claycoveredbottom-y-n-n-n-*": { "base": "block/claycovered/channel1" },
+    "claycoveredbottom-n-y-n-n-*": { "base": "block/claycovered/channel1", "rotateY": 90},
+    "claycoveredbottom-n-n-y-n-*": { "base": "block/claycovered/channel1", "rotateY": 180},
+    "claycoveredbottom-n-n-n-y-*": { "base": "block/claycovered/channel1", "rotateY": 270},
+    "claycoveredbottom-y-n-y-n-*": { "base": "block/claycovered/channel2" },
+    "claycoveredbottom-n-y-n-y-*": { "base": "block/claycovered/channel2", "rotateY": 90 },
+    "claycoveredbottom-y-y-n-n-*": { "base": "block/claycovered/channel2-c" },
+    "claycoveredbottom-n-y-y-n-*": { "base": "block/claycovered/channel2-c", "rotateY": 90},
+    "claycoveredbottom-n-n-y-y-*": { "base": "block/claycovered/channel2-c", "rotateY": 180},
+    "claycoveredbottom-y-n-n-y-*": { "base": "block/claycovered/channel2-c", "rotateY": 270},
+    "claycoveredbottom-y-n-y-y-*": { "base": "block/claycovered/channel3", "rotateY": 180 },
+    "claycoveredbottom-y-y-n-y-*": { "base": "block/claycovered/channel3", "rotateY": 270},
+    "claycoveredbottom-y-y-y-n-*": { "base": "block/claycovered/channel3"},
+    "claycoveredbottom-n-y-y-y-*": { "base": "block/claycovered/channel3", "rotateY": 90},
+    "claycoveredbottom-y-y-y-y-*": { "base": "block/claycovered/channel4" }
+  },
+  "blockmaterial": "Soil",
+  "replaceable": 900,
+  "fertility": 0,
+  "resistance": 2.5,
+  "texturesByType": {
+    "*-raw-*": {
+      "clay": { "base": "game:block/clay/{clay_type}clay" },
+      "soil": { "base": "game:block/soil/fert{fertility}" }
+    },
+    "*-burned-*": {
+      "clay": { "base": "game:block/clay/hardened/{clay_type}1" },
+      "soil": { "base": "game:block/soil/fert{fertility}" }
+    }
+  },
+  "drops": [ 
+    {
+      "type": "block",
+      "code": "game:soil-{fertility}-none",
+      "quantity": { "avg": 1, "var": 0 }
+    },
+    {
+      "type": "item",
+      "code": "game:clay-{clay_type}",
+      "quantity": {"avg": 3, "var": 0 }
+    }
+  ],
+  "sounds": {
+    "place": "game:block/soil",
+    "break": "game:block/soil",
+    "hit": "game:block/soil",
+    "walk": "game:walk/soil"
+  }
+}

@@ -1,0 +1,90 @@
+﻿{
+  "code": "tarpit",
+  "class": "BlockTarPit",
+  "entityClass": "BlockEntityTarPit",
+  "attributes": {
+    "handbook": {
+      "exclude": true
+    },
+    "mapColorCode": "land",
+    "preventsDecay": true,
+    "liquidContainerProps": {
+      "capacityLitres": 30,
+      "transferSizeLitres": 1,
+      "emptyShapeLoc": "tarmod:shapes/block/claycovered/pit",
+      "opaqueContentShapeLoc": "tarmod:shapes/block/claycovered/pitcontents",
+      "liquidContentShapeLoc": "tarmod:shapes/block/claycovered/pitcontents",
+      "liquidMaxYTranslate": 0.40625
+    }
+  },
+  "variantgroups": [
+    {
+      "code": "clay_state",
+      "states": [
+        "raw",
+        "burned"
+      ]
+    },
+    {
+      "code": "clay_type",
+      "states": [
+        "blue",
+        "fire", 
+        "red"
+      ]
+    },
+    {
+      "loadFromProperties": "game:abstract/fertility"
+    }
+  ],
+  "shape": {
+    "base": "block/claycovered/pit"
+  },
+  "blockmaterial": "Soil",
+  "replaceable": 900,
+  "resistance": 2.5,
+  "fertility": 0,
+  "liquidSelectable": 1,
+  "texturesByType": {
+    "*-raw-*": {
+      "clay": {
+        "base": "game:block/clay/{clay_type}clay"
+      },
+      "soil": {
+        "base": "game:block/soil/fert{fertility}"
+      }
+    },
+    "*-burned-*": {
+      "clay": {
+        "base": "game:block/clay/hardened/{clay_type}1"
+      },
+      "soil": {
+        "base": "game:block/soil/fert{fertility}"
+      }
+    }
+  },
+  "drops": [
+    {
+      "type": "block",
+      "code": "game:soil-{fertility}-none",
+      "quantity": {
+        "avg": 1,
+        "var": 0
+      }
+    },
+    {
+      "type": "item",
+      "code": "game:clay-{clay_type}",
+      "quantity": {
+        "avg": 5,
+        "var": 0
+      }
+    }
+  ],
+  "sounds": {
+    "place": "game:block/soil",
+    "break": "game:block/soil",
+    "hit": "game:block/soil",
+    "walk": "game:walk/soil"
+  }
+}

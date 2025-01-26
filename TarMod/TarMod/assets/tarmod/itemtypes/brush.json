@@ -1,0 +1,8 @@
+﻿{
+  "code": "brush",
+  "enabled": false,
+  "class": "ItemBrush",
+  "maxstacksize": 1,
+  "shape": { "base": "item/brush" },
+  "creativeinventory": { "general": ["*"], "items": ["*"] }
+}

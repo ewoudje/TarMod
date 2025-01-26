@@ -1,0 +1,54 @@
+﻿{
+  "code": "claycoveredside",
+  "attributes": {
+    "handbook": {
+      "exclude": true
+    },
+    "mapColorCode": "land",
+    "preventsDecay": true
+  },
+  "variantgroups": [
+    { "loadFromProperties": "game:abstract/horizontalorientation" },
+    { "code": "clay_state", "states": ["raw", "burned"] },
+    { "code": "clay_type", "states": ["blue", "fire", "red"]},
+    { "loadFromProperties": "game:abstract/fertility" }
+  ],
+  "shapeByType": {
+    "*-north-*": { "base": "block/claycovered/side", "rotateY": 180 },
+    "*-east-*": { "base": "block/claycovered/side", "rotateY": 90 },
+    "*-south-*": { "base": "block/claycovered/side" },
+    "*-west-*": { "base": "block/claycovered/side", "rotateY": 270 }
+  },
+  "blockmaterial": "Soil",
+  "replaceable": 900,
+  "resistance": 2.5,
+  "fertility": 0,
+  "texturesByType": {
+    "*-raw-*": {
+      "clay": { "base": "game:block/clay/{clay_type}clay" },
+      "soil": { "base": "game:block/soil/fert{fertility}" }
+    },
+    "*-burned-*": {
+      "clay": { "base": "game:block/clay/hardened/{clay_type}1" },
+      "soil": { "base": "game:block/soil/fert{fertility}" }
+    }
+  },
+  "drops": [ 
+    {
+      "type": "block",
+      "code": "game:soil-{fertility}-none",
+      "quantity": { "avg": 1, "var": 0 }
+    },
+    {
+      "type": "item",
+      "code": "game:clay-{clay_type}",
+      "quantity": {"avg": 3, "var": 0 }
+    }
+  ],
+  "sounds": {
+    "place": "game:block/soil",
+    "break": "game:block/soil",
+    "hit": "game:block/soil",
+    "walk": "game:walk/soil"
+  }
+}

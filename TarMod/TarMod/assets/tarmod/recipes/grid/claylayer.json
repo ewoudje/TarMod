@@ -1,0 +1,14 @@
+﻿{
+  "ingredientPattern": "   ,   ,CCC",
+  "ingredients": {
+    "C": { 
+      "type": "item", 
+      "code": "game:clay-*",
+      "name": "type"
+    }
+  },
+  name: "claylayer",
+  "width": 3,
+  "height": 3,
+  "output": { "type": "item", "code": "claylayer-{type}", "quantity": 1  }
+}

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeBuild", "TarMod\CakeBuild\CakeBuild.csproj", "{10B67C78-9CA3-4518-9772-93FFECD6133C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarMod", "TarMod\TarMod\TarMod.csproj", "{F947B55B-259F-444E-8CDE-E05A75FC899A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10B67C78-9CA3-4518-9772-93FFECD6133C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10B67C78-9CA3-4518-9772-93FFECD6133C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10B67C78-9CA3-4518-9772-93FFECD6133C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10B67C78-9CA3-4518-9772-93FFECD6133C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F947B55B-259F-444E-8CDE-E05A75FC899A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F947B55B-259F-444E-8CDE-E05A75FC899A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F947B55B-259F-444E-8CDE-E05A75FC899A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F947B55B-259F-444E-8CDE-E05A75FC899A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
