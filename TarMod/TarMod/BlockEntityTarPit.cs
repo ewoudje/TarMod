@@ -13,7 +13,9 @@ namespace TarMod;
 
 public class BlockEntityTarPit : BlockEntityLiquidContainer
 {
-    private const int burnModifier = 4;
+    private static Item tarPortion = null;
+    private static WaterTightContainableProps tarProps = null;
+    private const float burnModifier = 0.3f;
     
     public override string InventoryClassName => "tarpit";
 
@@ -27,6 +29,8 @@ public class BlockEntityTarPit : BlockEntityLiquidContainer
     public override void Initialize(ICoreAPI api)
     {
         base.Initialize(api);
+        tarPortion ??= Api.World.GetItem(new AssetLocation("game", "tarportion"));
+        tarProps ??= tarPortion.Attributes["waterTightContainerProps"].AsObject<WaterTightContainableProps>();
         
         if (Api.Side != EnumAppSide.Client)
             return;
@@ -140,10 +144,11 @@ public class BlockEntityTarPit : BlockEntityLiquidContainer
     
     public void FireWoodBurned(int quantity)
     {
+        var liters = (int) (quantity * tarProps.ItemsPerLitre * burnModifier);
         if (inventory[0].Empty)
-            inventory[0].Itemstack = new ItemStack(Api.World.GetItem(new AssetLocation("game", "tarportion")), quantity * burnModifier);
+            inventory[0].Itemstack = new ItemStack(tarPortion, liters);
         else
-            inventory[0].TryPutInto(Api.World, inventory[0], quantity * burnModifier);
+            inventory[0].Itemstack = new ItemStack(tarPortion, liters + inventory[0].Itemstack.StackSize);
         
         MarkDirty();
     }
