@@ -81,6 +81,8 @@ public class BlockEntityTarPit : BlockEntityLiquidContainer
     
     private static BlockEntityTarPit Traverse(IBlockAccessor accessor, BlockPos startPos, Dictionary<BlockPos, (int, BlockEntityTarPit)> cache)
     {
+        if (cache.TryGetValue(startPos, out var r)) return r.Item2;
+        
         var queue = new Queue<(BlockPos, int)>();
         var bestDistance = int.MaxValue;
         BlockEntityTarPit bestTarPit = null;

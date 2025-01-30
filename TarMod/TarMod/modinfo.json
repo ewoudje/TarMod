@@ -6,7 +6,7 @@
         "ewoudje"
     ],
     "description": "Adds tar to your game!",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "dependencies": {
         "game": ""
     }
