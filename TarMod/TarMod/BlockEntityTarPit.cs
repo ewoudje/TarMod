@@ -95,6 +95,8 @@ public class BlockEntityTarPit : BlockEntityLiquidContainer
         while (queue.Count > 0)
         {
             var (pos, distance) = queue.Dequeue();
+            if (distance > 10) continue;
+            
             visited.Add(pos);
 
             if (cache.TryGetValue(pos, out var v))
