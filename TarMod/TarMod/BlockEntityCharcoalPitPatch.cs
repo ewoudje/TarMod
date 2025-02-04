@@ -40,22 +40,39 @@ public class BlockEntityCharcoalPitPatch
     public static void ConvertWithLocals(BlockEntityCharcoalPit instance, HashSet<BlockPos> pos)
     {
         var world = instance.Api.World;
-        var cache = new Dictionary<BlockPos, (int, BlockEntityTarPit)>();
-        foreach (var p in pos)
+        try
         {
-            Block b = null;
-            var amount = BlockFirepit.GetFireWoodQuanity(world, p);
-            for (int i = 0; i < 9; i++)
+            var cache = new Dictionary<BlockPos, (int, BlockEntityTarPit)>();
+            foreach (var p in pos)
             {
-                b = world.BlockAccessor.GetBlock(p.Down());
-                if (b is TarPitClayBlock) break;
+                Block b = null;
+                var amount = BlockFirepit.GetFireWoodQuanity(world, p);
+                for (int i = 0; i < 9; i++)
+                {
+                    b = world.BlockAccessor.GetBlock(p.Down());
+                    if (b is TarPitClayBlock) break;
+                }
+
+                if (b is not TarPitClayBlock bake) continue;
+                bake.Bake(world, p);
+
+                BlockEntityTarPit tar = null;
+                
+                try
+                {
+                    tar = BlockEntityTarPit.MostNearbyPit(world, p, cache);
+                }
+                catch (Exception e)
+                {
+                    world.Logger.Warning(e);
+                }
+                
+                tar?.FireWoodBurned(amount);
             }
-            
-            if (b is not TarPitClayBlock bake) continue;
-            bake.Bake(world, p);
-            
-            var tar = BlockEntityTarPit.MostNearbyPit(world, p, cache);
-            tar?.FireWoodBurned(amount);
+        }
+        catch (Exception e)
+        {
+            world.Logger.Error(e);
         }
     }
 }
