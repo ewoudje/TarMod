@@ -43,9 +43,10 @@ public class BlockEntityCharcoalPitPatch
         try
         {
             var cache = new Dictionary<BlockPos, (int, BlockEntityTarPit)>();
-            foreach (var p in pos)
+            foreach (var pOriginal in pos)
             {
                 Block b = null;
+                BlockPos p = pOriginal.Copy();
                 var amount = BlockFirepit.GetFireWoodQuanity(world, p);
                 for (int i = 0; i < 9; i++)
                 {
