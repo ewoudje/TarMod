@@ -21,12 +21,6 @@
     "value": ["*-tarred-*"]
   },
   {
-    "file": "game:blocktypes/wood/woodtyped/log-debarked",
-    "op": "addmerge",
-    "path": "/skipVariants",
-    "value": ["*-tarred-*"]
-  },
-  {
     "file": "game:blocktypes/wood/woodtyped/log-quad",
     "op": "addmerge",
     "path": "/skipVariants",

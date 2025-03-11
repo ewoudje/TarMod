@@ -1,0 +1,22 @@
+﻿{
+  "ingredientPattern": "TP",
+  "ingredients": {
+    "T": { 
+      "type": "block", 
+      "code": "game:woodbucket"
+    },
+    "P": { "type": "item", "code": "game:log-debarked-*" }
+  },
+
+  "width": 2,
+  "height": 1,
+  "attributes": {
+    "liquidContainerProps": {
+      "requiresContent": { "type": "item", "code": "game:tarportion" },
+      "requiresLitres": 0.16
+    }
+  },
+  "recipeGroup": 1,
+  "shapeless": true,
+  "output": { "type": "item", "code": "game:log-debarked-tarred-ud", "quantity": 1  }
+}
