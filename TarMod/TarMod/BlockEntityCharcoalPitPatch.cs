@@ -12,12 +12,11 @@ using Vintagestory.GameContent;
 
 namespace TarMod;
 
-[HarmonyPatch(typeof(BlockEntityCharcoalPit))]
-[HarmonyPatch("ConvertPit")]
 public class BlockEntityCharcoalPitPatch
 {
     
-    [HarmonyDebug]
+    [HarmonyTranspiler]
+    [HarmonyPatch(typeof(BlockEntityCharcoalPit), "ConvertPit")]
     static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
     {
         var list = new List<CodeInstruction>(instructions);

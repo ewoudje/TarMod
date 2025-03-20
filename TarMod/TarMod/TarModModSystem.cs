@@ -8,8 +8,7 @@ using Vintagestory.ServerMods;
 namespace TarMod;
 
 [HarmonyPatch]
-public class TarModModSystem : ModSystem
-{
+public class TarModModSystem : ModSystem {
     public Harmony Harmony;
     private List<CoatingRecipe> coatingRecipes;
     private Dictionary<int, Dictionary<int, CoatingRecipe>> coatingRecipesDictionary;
@@ -41,6 +40,10 @@ public class TarModModSystem : ModSystem
         }
         
     }
+    
+    public override void Dispose() {
+        Harmony?.UnpatchAll(Mod.Info.ModID);
+    }
 
     public void AddCoatingRecipe(CoatingRecipe recipe)
     {
@@ -57,4 +60,6 @@ public class TarModModSystem : ModSystem
         
         blockDictonary[block] = recipe;
     }
+    
+    
 }
