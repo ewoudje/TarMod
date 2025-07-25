@@ -1,0 +1,26 @@
+﻿[
+  {
+    "file": "aculinaryartillery:blocktypes/bottlerack",
+    "op": "addmerge",
+    "path": "/variantgroups/0/states",
+    "value": [ "tarred" ]
+  },
+  {
+    "file": "aculinaryartillery:blocktypes/bottlerack",
+    "op": "addmerge",
+    "path": "/variantgroups/1/states",
+    "value": [ "tarred" ]
+  },
+  {
+    "file": "aculinaryartillery:blocktypes/bottlerackcorner",
+    "op": "addmerge",
+    "path": "/variantgroups/0/states",
+    "value": [ "tarred" ]
+  },
+  {
+    "file": "aculinaryartillery:blocktypes/bottlerackcorner",
+    "op": "addmerge",
+    "path": "/variantgroups/1/states",
+    "value": [ "tarred" ]
+  }
+]

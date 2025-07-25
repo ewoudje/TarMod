@@ -1,0 +1,8 @@
+﻿[
+  {
+    "file": "confession:blocktypes/wood/doors",
+    "op": "addmerge",
+    "path": "/variantgroups/1/states",
+    "value": [ "tarred" ]
+  }
+]
