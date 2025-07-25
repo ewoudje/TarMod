@@ -154,7 +154,7 @@ public class BlockEntityTarPit : BlockEntityLiquidContainer
         else
             inventory[0].Itemstack = new ItemStack(tarPortion, liters + inventory[0].Itemstack.StackSize);
         
-        MarkDirty();
+        MarkDirty(true);
     }
     
     public static BlockEntityTarPit MostNearbyPit(IWorldAccessor world, BlockPos pos, Dictionary<BlockPos, (int, BlockEntityTarPit)> cache = null)
