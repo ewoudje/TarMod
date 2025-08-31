@@ -6,7 +6,7 @@
       "type": "block", 
       "code": "game:woodbucket"
     },
-    "P": { "type": "item", "code": "game:log-debarked-*" }
+    "P": { "type": "block", "code": "game:debarkedlog-*" }
   },
 
   "width": 2,
@@ -19,5 +19,5 @@
   },
   "recipeGroup": 1,
   "shapeless": true,
-  "output": { "type": "item", "code": "game:log-debarked-tarred-ud", "quantity": 1  }
+  "output": { "type": "block", "code": "game:debarkedlog-tarred-ud", "quantity": 1  }
 }

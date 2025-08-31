@@ -21,7 +21,7 @@
     "value": ["*-tarred-*"]
   },
   {
-    "file": "game:blocktypes/wood/woodtyped/debarkedlog",
+    "file": "game:blocktypes/wood/woodtyped/path",
     "op": "addmerge",
     "path": "/skipVariants",
     "value": ["*-tarred-*"]
@@ -91,5 +91,11 @@
     "op": "add",
     "path": "/ingredients/W/allowedVariants/-",
     "value": "tarred"
+  },
+  {
+    "file": "game:recipes/grid/log-quad",
+    "op": "addmerge",
+    "path": "/0/ingredients/G/skipVariants",
+    "value": ["tarred"]
   }
 ]

@@ -34,7 +34,7 @@ public class BlockEntityTarPit : BlockEntityLiquidContainer
         
         if (Api.Side != EnumAppSide.Client)
             return;
-        currentMesh = this.GenMesh();
+        currentMesh = GenMesh();
         MarkDirty(true);
     }
     
@@ -49,7 +49,7 @@ public class BlockEntityTarPit : BlockEntityLiquidContainer
     
     private MeshData GenMesh()
     {
-        return (Block as BlockTarPit).GenMesh(this.Api as ICoreClientAPI, this.GetContent(), this.Pos);
+        return (Block as BlockTarPit).GenMesh(Api as ICoreClientAPI, GetContent(), Pos);
     }
 
     public override void OnBlockPlaced(ItemStack byItemStack = null)
@@ -57,27 +57,15 @@ public class BlockEntityTarPit : BlockEntityLiquidContainer
         base.OnBlockPlaced(byItemStack);
         if (Api.Side != EnumAppSide.Client)
             return;
-        currentMesh = GenMesh();
         MarkDirty(true);
     }
     
     public override bool OnTesselation(ITerrainMeshPool mesher, ITesselatorAPI tesselator)
     {
-        if (currentMesh != null)
-            mesher.AddMeshData(currentMesh.Clone().Rotate(new Vec3f(0.5f, 0.5f, 0.5f), 0.0f, 0.0f, 0.0f));
+        currentMesh = GenMesh();
+        mesher.AddMeshData(currentMesh.Clone().Rotate(new Vec3f(0.5f, 0.5f, 0.5f), 0.0f, 0.0f, 0.0f));
         return true;
     }
-
-    public override void FromTreeAttributes(ITreeAttribute tree, IWorldAccessor worldForResolving)
-    {
-        base.FromTreeAttributes(tree, worldForResolving);
-        ICoreAPI api = Api;
-        if ((api != null ? (api.Side == EnumAppSide.Client ? 1 : 0) : 0) == 0)
-            return;
-        currentMesh = GenMesh();
-        MarkDirty(true);
-    }
-  
     
     private static BlockEntityTarPit Traverse(IBlockAccessor accessor, BlockPos startPos, Dictionary<BlockPos, (int, BlockEntityTarPit)> cache)
     {
