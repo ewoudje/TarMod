@@ -1,7 +1,7 @@
 {
   "block-claycovered*": "Gleba z warstwą gliny",
   "item-claylayer-*": "Warstwa gliny",
-  "tarmod:item-handbooktext-tarmod:claylayer-*": "Można wyłożyć nią spód mielerza, by łącząc kanały ze sobą, doprowadzić smołę do dołu.",
+  "tarmod:item-handbooktext-tarmod:claylayer-*": "Można wyłożyć nią spód mielarza, które następnie może być wykorzystane do odprowadzania smoły.",
   "item-tarpit-*": "Dół do gromadzenia smoły",
   "tarmod:item-handbooktext-tarmod:tarpit-*": "Dół w którym gromadzi się smoła, użyj <a href=\"handbook://item-tarmod:claylayer-blue\">Warstwa gliny</a> by połączyć kanały z dołem.",
   "block-tarpit-*": "Dół do gromadzenia smoły",
