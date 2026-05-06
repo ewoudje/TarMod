@@ -10,8 +10,6 @@ namespace TarMod;
 [HarmonyPatch]
 public class TarModModSystem : ModSystem {
     public Harmony Harmony;
-    private List<CoatingRecipe> coatingRecipes;
-    private Dictionary<int, Dictionary<int, CoatingRecipe>> coatingRecipesDictionary;
 
     public override void AssetsLoaded(ICoreAPI api)
     {
@@ -44,22 +42,4 @@ public class TarModModSystem : ModSystem {
     public override void Dispose() {
         Harmony?.UnpatchAll(Mod.Info.ModID);
     }
-
-    public void AddCoatingRecipe(CoatingRecipe recipe)
-    {
-        coatingRecipes.Add(recipe);
-        var liquid = recipe.LiquidIngredient.ResolvedItemstack.Id;
-        var block = recipe.AffectBlockIngredient.ResolvedItemstack.Id;
-
-        Dictionary<int, CoatingRecipe> blockDictonary;
-        if (!coatingRecipesDictionary.TryGetValue(liquid, out blockDictonary))
-        {
-            blockDictonary = new Dictionary<int, CoatingRecipe>();
-            coatingRecipesDictionary.Add(liquid, blockDictonary);
-        }
-        
-        blockDictonary[block] = recipe;
-    }
-    
-    
 }

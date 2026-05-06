@@ -7,7 +7,7 @@
       "name": "type"
     }
   },
-  name: "claylayer",
+  "name": "claylayer",
   "width": 3,
   "height": 3,
   "output": { "type": "item", "code": "claylayer-{type}", "quantity": 1  }
